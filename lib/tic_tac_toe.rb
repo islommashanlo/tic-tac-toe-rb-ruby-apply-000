@@ -26,7 +26,7 @@ def input_to_index(user_input)
 end
 #move
 def move(array, index, value)
-  if value != ("X" or "O")
+  if value !=("X" or "O")
   array[index] = value
   return array
 end
