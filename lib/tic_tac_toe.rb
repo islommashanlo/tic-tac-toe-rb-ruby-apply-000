@@ -120,7 +120,7 @@ def over?(board)
   end
 end
 #winner?
-def winner (board)
+def winner(board)
   index = won?(board)
   if index == false
     return nil
