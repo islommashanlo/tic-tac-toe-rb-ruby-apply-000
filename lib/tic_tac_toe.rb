@@ -48,7 +48,6 @@ def turn(board)
   end
 end
 #turn_count
-#turn_count
 def turn_count(board)
   turns = 0
   board.each do |pos|
