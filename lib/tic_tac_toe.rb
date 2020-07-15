@@ -47,3 +47,11 @@ def turn(board)
     turn(board)
   end
 end
+#turn_count
+def turn_count(board)
+  counter = 0
+  until counter == 9
+    turn(board)
+    counter += 1
+  end
+end
