@@ -45,18 +45,6 @@ def valid_move?(board, index)
     false
   end
 end
-#turn
-def turn(board)
-    puts "Please enter 1-9:"
-    user_input = gets.strip
-    index = input_to_index(user_input)
-  if valid_move?(board, index)
-    then move(board, index, current_player(board))
-         display_board(board)
-  else
-    turn(board)
-  end
-end
 #turn_count
 def turn_count(board)
   counter = 0
@@ -74,6 +62,18 @@ def current_player(board)
     then return "X"
   else
     return "O"
+  end
+end
+#turn
+def turn(board)
+    puts "Please enter 1-9:"
+    user_input = gets.strip
+    index = input_to_index(user_input)
+  if valid_move?(board, index)
+    then move(board, index, current_player(board))
+         display_board(board)
+  else
+    turn(board)
   end
 end
 #won?
