@@ -134,5 +134,6 @@ def winner (board)
 end
 #play
 def play(board)
-  user_input = gets.strip
+  turn(board)
+
 end
