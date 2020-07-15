@@ -138,4 +138,5 @@ def play(board)
     if over?(board)
       break
     end
+  end
 end
