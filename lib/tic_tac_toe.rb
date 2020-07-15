@@ -25,7 +25,7 @@ def input_to_index(user_input)
   return converted_input
 end
 #move
-def move(array, index, value == "X")
+def move(array, index, value = "X")
   array[index] = value
   return array
 end
