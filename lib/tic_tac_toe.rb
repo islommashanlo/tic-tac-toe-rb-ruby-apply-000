@@ -134,6 +134,8 @@ def winner (board)
 end
 #play
 def play(board)
-  turn(board)
-
+  loop do turn(board)
+    if over?(board)
+      break
+    end
 end
