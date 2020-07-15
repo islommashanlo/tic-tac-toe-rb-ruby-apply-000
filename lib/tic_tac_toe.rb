@@ -27,7 +27,7 @@ end
 #move
 def move(array, index, value)
   if value !=("X" or "O")
-    puts "Please enter a valid move"
+    puts "Please enter a valid move (X or O)"
     then move(array, index, value)
   array[index] = value
   return array
