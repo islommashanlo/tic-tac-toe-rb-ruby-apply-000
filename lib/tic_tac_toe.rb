@@ -25,9 +25,9 @@ def input_to_index(user_input)
   return converted_input
 end
 #move
-def move(array, index, value)
-  array[index] = value
-  return array
+def move(board, index, value)
+  board[index] = value
+  return board
 end
 #position_taken?
 def position_taken?(board, index)
