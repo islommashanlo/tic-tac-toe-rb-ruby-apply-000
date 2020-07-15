@@ -59,10 +59,10 @@ def turn(board)
 end
 #turn_count
 def turn_count(board)
-  turns = 0
+  counter = 0
   board.each do |pos|
     if pos == "X" or pos == "O"
-      then turns += 1
+      then counter += 1
     end
   end
   return turns
